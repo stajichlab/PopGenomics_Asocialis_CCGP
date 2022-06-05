@@ -1,10 +1,10 @@
 #!/usr/bin/bash -l
-#SBATCH -N 1 -n 16 --mem 32gb --out logs/bwa.%a.log --time 8:00:00
+#SBATCH -N 1 -n 16 --mem 32gb --out logs/bwa.%a.log --time 8:00:00 -a 1-159
 module load bwa
 module load samtools
 module load picard
 module load gatk/4
-module load java/13
+module load java
 module load workspace/scratch
 MEM=32g
 
@@ -78,8 +78,8 @@ do
           fi
         fi # SRTED file exists or was created by this block
 
-        time java -jar $PICARD MarkDuplicates I=$SRTED O=$DDFILE \
-          METRICS_FILE=logs/$STRAIN.dedup.metrics CREATE_INDEX=true VALIDATION_STRINGENCY=SILENT
+        time java -jar $PICARD MarkDuplicates -I $SRTED -O $DDFILE \
+          -METRICS_FILE logs/$STRAIN.dedup.metrics -CREATE_INDEX true -VALIDATION_STRINGENCY SILENT
         if [ -f $DDFILE ]; then
           rm -f $SRTED
         fi
