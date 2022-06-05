@@ -5,3 +5,4 @@ pushd input
 ls *R1_001.fastq.gz | perl -p -e 's/(((\S+)_S\d+)_L\d+_R1_001\.fastq\.gz)/$3,$2\_R[12]_001.fastq.gz/'  >> ../samples.csv
 popd
 perl scripts/fix_CCGP_multirun.pl samples.csv > sample_fix.csv
+mv sample_fix.csv samples.csv
