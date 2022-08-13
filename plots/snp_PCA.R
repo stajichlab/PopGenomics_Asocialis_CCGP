@@ -57,10 +57,10 @@ plot(tab$EV2, tab$EV1,
 
 CORRSNP <- snpgdsPCACorr(pca, genofile, eig.which=1:4,num.thread=2)
 
-savepar <- par(mfrow=c(3,1), mai=c(0.3, 0.55, 0.1, 0.25))
-for (i in 1:3)
-{
-  plot(abs(CORRSNP$snpcorr[i,]), ylim=c(0,1), xlab="", ylab=paste("PC", i),
-       col=factor(chr), pch="+")
-}
+#savepar <- par(mfrow=c(3,1), mai=c(0.3, 0.55, 0.1, 0.25))
+#for (i in 1:3)
+#{
+#  plot(abs(CORRSNP$snpcorr[i,]), ylim=c(0,1), xlab="", ylab=paste("PC", i),
+#       col=factor(chr), pch="+")
+#}
 
