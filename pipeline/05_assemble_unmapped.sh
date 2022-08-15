@@ -43,6 +43,6 @@ do
     fastp -y --in1 $UMAPSINGLE -y --compression 5 --out1 $SCRATCH/${STRAIN}_single.fq.gz  --json $UNMAPPED/$STRAIN.fastp.SE.json --html $UNMAPPED/$STRAIN.fastp.SE.html
 
     spades.py --pe-1 1 $SCRATCH/${STRAIN}_filter_1.fq.gz --pe-2 1 $SCRATCH/${STRAIN}_filter_2.fq.gz \
-	    --pe-s 1 $SCRATCH/${STRAIN}_single.fq.gz --pe-s 2 $SCRATCH/${STRAIN}_merged.fq.gz -o $UNMAPPEDASM/$STRAIN -t $CPU -m $MEM --meta --tmp-dir $SCRATCH
+	    --pe-s 1 $SCRATCH/${STRAIN}_single.fq.gz --pe-s 2 $SCRATCH/${STRAIN}_merged.fq.gz -o $UNMAPPEDASM/$STRAIN -t $CPU -m $MEM --tmp-dir $SCRATCH
   fi
 done
