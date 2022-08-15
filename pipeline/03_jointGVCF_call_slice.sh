@@ -1,5 +1,5 @@
 #!/usr/bin/bash -l
-#SBATCH --mem 24G --nodes 1 --ntasks 2 -J slice.GVCFGeno --out logs/GVCFGenoGATK4.slice_%a.%A.log  -p intel
+#SBATCH --mem 24G --nodes 1 --ntasks 2 -J slice.GVCFGeno --out logs/GVCFGenoGATK4.slice_%a.%A.log  -p intel -a 1-91
 
 hostname
 MEM=24g
