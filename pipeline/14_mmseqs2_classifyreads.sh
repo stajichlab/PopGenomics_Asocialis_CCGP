@@ -1,9 +1,9 @@
 #!/usr/bin/bash -l
-#SBATCH -p short -N 1 -n 96 --mem 384gb --out logs/mmseqs_classify_reads.%a.log -a 1-28
+#SBATCH -p short -N 1 -n 96 --mem 256gb --out logs/mmseqs_classify_reads.%a.log -a 1-159
 
 module load workspace/scratch
 module load mmseqs2
-module load KronaTools
+#module load KronaTools
 
 if [ -f config.txt ]; then
   source config.txt
@@ -39,6 +39,9 @@ do
     BASEPATTERN=$(echo $FILEBASE | perl -p -e 's/\;/ /g; ')
     if [ ! -s $OUTSEARCH/$STRAIN/mmseq_${DB2NAME}_report ]; then
 	mmseqs easy-taxonomy $INDIR/$BASEPATTERN $DB2 $OUTSEARCH/$STRAIN/mmseq_$DB2NAME $SCRATCH --threads $CPU --lca-ranks kingdom,phylum,family  --tax-lineage 1
-	ktImportTaxonomy -o $OUTSEARCH/$STRAIN/mmseq_${DB2NAME}.krona.html $OUTSEARCH/$STRAIN/mmseq_${DB2NAME}_report
+	IDX=$SCRATCH/${STRAIN}_reads.idx
+	mmseqs createdb $INDIR/$BASEPATTERN $IDX --dbtype 2
+	mmseqs taxonomy $IDX $DB $SCRATCH/${DB2NAME}_taxo $SCRATCH -s 2 --threads $CPU
+	mmseqs taxonomyreport $DB $SCRATCH/${DB2NAME}_taxo $OUTSEARCH/$STRAIN/mmseq_$DB2NAME.krona_native.html --report-mode 1
     fi
 done

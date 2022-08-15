@@ -1,9 +1,8 @@
 #!/usr/bin/bash -l
-#SBATCH -p short -N 1 -n 128 --mem 384gb --out logs/mmseqs_classify_unmappedreads.%a.log -a 1-159
+#SBATCH -p short -N 1 -n 64 --mem 256gb --out logs/mmseqs_classify_unmappedreads.%a.log -a 1-159
 
 module load workspace/scratch
 module load mmseqs2
-module load KronaTools
 
 if [ -f config.txt ]; then
   source config.txt
@@ -38,8 +37,12 @@ do
     mkdir -p $OUTSEARCH/$STRAIN
     BASEPATTERN=$(echo $FILEBASE | perl -p -e 's/\;/ /g; ')
     if [ ! -s $OUTSEARCH/$STRAIN/mmseq_${DB2NAME}_report ]; then
+	IDX=$SCRATCH/${STRAIN}_reads.idx
+	mmseqs createdb $INDIR/$STRAIN.fastq.gz $INDIR/${STRAIN}_single.fastq.gz $IDX --dbtype 2
+	mmseqs taxonomy $IDX $DB $SCRATCH/${DB2NAME}_taxo $SCRATCH -s 2 --threads $CPU
+	mmseqs taxonomyreport $DB $SCRATCH/${DB2NAME}_taxo $OUTSEARCH/$STRAIN/mmseq_$DB2NAME.krona_native.html --report-mode 1
+
 	mmseqs easy-taxonomy $INDIR/$STRAIN.fastq.gz $INDIR/${STRAIN}_single.fastq.gz $DB2 $OUTSEARCH/$STRAIN/mmseq_$DB2NAME $SCRATCH --threads $CPU --lca-ranks kingdom,phylum,family  --tax-lineage 1
-	ktImportTaxonomy -o $OUTSEARCH/$STRAIN/mmseq_${DB2NAME}.krona.html $OUTSEARCH/$STRAIN/mmseq_${DB2NAME}_report
-	pigz $OUTSEARCH/$STRAIN/*.tsv $OUTSEARCH/$STRAIN/mmseq_uniref50_tophit_aln
+	pigz $OUTSEARCH/$STRAIN/*.tsv $OUTSEARCH/$STRAIN/mmseq_uniref50_tophit_aln $OUTSEARCH/$STRAIN/mmseq_uniref50_tophit_report
     fi
 done
