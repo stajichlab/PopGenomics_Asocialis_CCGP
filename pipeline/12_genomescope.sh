@@ -1,5 +1,5 @@
 #!/usr/bin/bash -l
-#SBATCH -p short -N 1 -n 24 --mem 64gb --out logs/genomescope.%a.log -a 1-28
+#SBATCH -p short -N 1 -n 24 --mem 64gb --out logs/genomescope.%a.log -a 1-159
 
 module load workspace/scratch
 module load samtools
@@ -29,6 +29,7 @@ if [ $N -gt $MAX ]; then
   echo "$N is too big, only $MAX lines in $SAMPFILE"
   exit
 fi
+mkdir -p $GENOMESCOPE
 JELLYFISHSIZE=1000000000
 IFS=,
 KMER=21

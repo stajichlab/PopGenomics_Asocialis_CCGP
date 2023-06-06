@@ -38,10 +38,10 @@ do
     mkdir -p $OUTSEARCH/$STRAIN
     BASEPATTERN=$(echo $FILEBASE | perl -p -e 's/\;/ /g; ')
     if [ ! -s $OUTSEARCH/$STRAIN/mmseq_${DB2NAME}_report ]; then
-	mmseqs easy-taxonomy $INDIR/$BASEPATTERN $DB2 $OUTSEARCH/$STRAIN/mmseq_$DB2NAME $SCRATCH --threads $CPU --lca-ranks kingdom,phylum,family  --tax-lineage 1
 	IDX=$SCRATCH/${STRAIN}_reads.idx
 	mmseqs createdb $INDIR/$BASEPATTERN $IDX --dbtype 2
 	mmseqs taxonomy $IDX $DB $SCRATCH/${DB2NAME}_taxo $SCRATCH -s 2 --threads $CPU
 	mmseqs taxonomyreport $DB $SCRATCH/${DB2NAME}_taxo $OUTSEARCH/$STRAIN/mmseq_$DB2NAME.krona_native.html --report-mode 1
+	mmseqs taxonomyreport $DB $SCRATCH/${DB2NAME}_taxo $OUTSEARCH/$STRAIN/mmseq_${DB2NAME}_report 
     fi
 done

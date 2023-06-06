@@ -1,45 +1,25 @@
 #!/usr/bin/bash -l
+#SBATCH -p short -c 2 -N 1 -n 1 --mem 4gb --out logs/index.log
+
 module load samtools
 module load bwa
 if [ -f config.txt ]; then
 	source config.txt
 fi
-mkdir -p $GENOMEFOLDER
-pushd $GENOMEFOLDER
-# THIS IS EXAMPLE CODE FOR HOW TO DOWNLOAD DIRECT FROM FUNGIDB
-RELEASE=39
-SPECIES=AfumigatusAf293
-URL=https://fungidb.org/common/downloads/release-${RELEASE}/$SPECIES
-PREF=FungiDB-${RELEASE}_${SPECIES}
-FASTAFILE=${PREF}_Genome.fasta
-DOMAINFILE=${PREF}_InterproDomains.txt
-GFF=${PREF}.gff
-## THIS IS FUNGIDB DOWNLOAD PART
-echo "working off $FASTAFILE - check if these don't match may need to update config/init script"
+grep ">" $REFGENOME | perl -p -e 's/^>(JAMYGW020+(\d+))\.\d+\s+/$1,$2\n/; s/>MT/MT,MT/' > $GENOMEFOLDER/chrom_nums.csv
+echo "working off $REFGENOME - check if these don't match may need to update config/init script"
 
-if [ ! -f $DOMAINFILE ]; then
-	curl -O $URL/txt/$DOMAINFILE
+if [[ ! -f $REFGENOME.fai || $REFGENOME -nt $REFGENOME.fai ]]; then
+	samtools faidx $REFGENOME
 fi
-if [ ! -f $FASTAFILE ] ; then
-	curl -O $URL/fasta/data/$FASTAFILE
-fi
-if [ ! -f $GFF ]; then
-	curl -O $URL/gff/data/$GFF
+if [[ ! -f $REFGENOME.bwt || $REFGENOME -nt $REFGENOME.bwt ]]; then
+	bwa index $REFGENOME
 fi
 
-if [[ ! -f $FASTAFILE.fai || $FASTAFILE -nt $FASTAFILE.fai ]]; then
-	samtools faidx $FASTAFILE
-fi
-if [[ ! -f $FASTAFILE.bwt || $FASTAFILE -nt $FASTAFILE.bwt ]]; then
-	bwa index $FASTAFILE
-fi
-
-DICT=$(basename $FASTAFILE .fasta)".dict"
-
-if [[ ! -f $DICT || $FASTAFILE -nt $DICT ]]; then
+DICT=$GENOMEFOLDER/$(basename $REFGENOME .fasta)".dict"
+echo "$DICT"
+if [[ ! -f $DICT || $REFGENOME -nt $DICT ]]; then
 	rm -f $DICT
-	samtools dict $FASTAFILE > $DICT
-	ln -s $DICT $FASTAFILE.dict 
+	samtools dict $REFGENOME > $DICT
+	ln -s $(basename $DICT) $REFGENOME.dict
 fi
-grep ">" $FASTAFILE | perl -p -e 's/>((Chr)?(\d+|mito)_\S+)\s+.+/$1,$3/' > chrom_nums.csv
-popd
