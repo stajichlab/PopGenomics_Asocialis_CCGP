@@ -1,14 +1,13 @@
 #!/usr/bin/bash -l
-#SBATCH --mem 24G --nodes 1 --ntasks 2 -J slice.GVCFGeno --out logs/GVCFGenoGATK4.slice_%a.%A.log  -p intel -a 1-91
+#SBATCH --mem 24G --nodes 1 --ntasks 2 -J slice.GVCFGeno --out logs/GVCFGenoGATK4.slice_%a.%A.log  -p intel -a 1-38
+
+# one job per chromosome/scaffold 
 
 hostname
 MEM=24g
 
-module unload R
-module unload java
 module load picard
-module load gatk/4
-module load java/13
+module load gatk/4.4.0.0
 module load bcftools
 module load parallel
 module load yq
@@ -31,15 +30,6 @@ if [ -f config.txt ]; then
 fi
 # The $SCRATCH folder is automatically created on HPCC slurm jobs, and removed at end of process
 TEMPDIR=$SCRATCH
-
-# if you need to use this on another system you can try something like this
-#declare -x TEMPDIR=$TEMP/$USER/$$
-#cleanup() {
-	#echo "rm temp is: $TEMPDIR"
-#	rm -rf $TEMPDIR
-#}#
-# Set trap to ensure cleanupis stopped
-#trap "cleanup; rm -rf $TEMPDIR; exit" SIGHUP SIGINT SIGTERM EXIT
 
 if [ ! -f $REFGENOME.fai ]; then
     module load samtools
@@ -77,7 +67,7 @@ fi
 mkdir -p $SLICEVCF
 for POPNAME in $(yq eval '.Populations | keys' $POPYAML | perl -p -e 's/^\s*\-\s*//')
 do
-	FILES=$(yq eval '.Populations.'$POPNAME'[]' $POPYAML | perl -p -e "s/(\S+)/-V $GVCFFOLDER\/\$1.g.vcf.gz/g"  )
+	FILES=$(yq eval '.Populations.'$POPNAME'[]' $POPYAML | perl -p -e "s#(\S+)#-V $GVCFFOLDER\/\$1.g.vcf.gz#g"  )
 	INTERVALS=$(cut -f1 $REFGENOME.fai  | sed -n "${NSTART},${NEND}p" | perl -p -e 's/(\S+)\n/--intervals $1 /g')
 
 	mkdir -p $SLICEVCF/$POPNAME
@@ -91,7 +81,7 @@ do
 	mkdir -p $TEMPDIR
 	if [ ! -f $GENOVCFOUT.gz ]; then
 	    if [ ! -f $GENOVCFOUT ]; then
-		DB=$TEMPDIR/${GVCFFOLDER}_slice_$N
+		DB=$TEMPDIR/slice_$N
 		rm -rf $DB
 		gatk  --java-options "-Xmx$MEM -Xms$MEM" GenomicsDBImport --consolidate --merge-input-intervals --genomicsdb-workspace-path $DB $FILES $INTERVALS --tmp-dir $TEMPDIR --reader-threads $CPU
 		time gatk GenotypeGVCFs --reference $REFGENOME --output $GENOVCFOUT -V gendb://$DB --tmp-dir $TEMPDIR

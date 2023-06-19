@@ -2,7 +2,7 @@
 #SBATCH -p short -c 2 -N 1 -n 1 --mem 4gb --out logs/index.log
 
 module load samtools
-module load bwa
+module load bwa-mem2
 if [ -f config.txt ]; then
 	source config.txt
 fi
@@ -13,7 +13,7 @@ if [[ ! -f $REFGENOME.fai || $REFGENOME -nt $REFGENOME.fai ]]; then
 	samtools faidx $REFGENOME
 fi
 if [[ ! -f $REFGENOME.bwt || $REFGENOME -nt $REFGENOME.bwt ]]; then
-	bwa index $REFGENOME
+	bwa-mem2 index $REFGENOME
 fi
 
 DICT=$GENOMEFOLDER/$(basename $REFGENOME .fasta)".dict"

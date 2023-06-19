@@ -1,5 +1,5 @@
 #!/usr/bin/bash -l
-#SBATCH -p short -N 1 -n 64 --mem 256gb --out logs/mmseqs_classify_unmappedreads.%a.log -a 1-159
+#SBATCH -p short -N 1 -n 64 --mem 256gb --out logs/mmseqs_classify_unmappedreads.%a.log -a 1-187
 
 module load workspace/scratch
 module load mmseqs2

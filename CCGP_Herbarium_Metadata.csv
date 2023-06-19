@@ -1,0 +1,189 @@
+ ,SampleID*,decimal longitude*,decimal latitude*,sample collection date*,Locality Description,General Locality,North/South,East/West,Regions,Species
+0,CCGP00,-119.907222,34.068611,2000-07-04,Santa Cruz Island; Channel Islands National Park,Channel Islands,Southern CA,West,Island/Coastal,A. socialis
+1,CCGP01,-120.064722,33.997778,2006-10-13,Santa Rosa Island; above Cherry Canyon near NPS housing,Channel Islands,Southern CA,West,Island/Coastal,A. socialis
+2,CCGP02,-120.028056,33.985833,2006-10-15,Santa Rosa Island; Channel Islands National park; along Torrey Pines Road,Channel Islands,Southern CA,West,Island/Coastal,A. socialis
+3,CCGP03,-120.028056,33.985833,2007-08-21,Santa Rosa Island; the Ranch: the corrals,Channel Islands,Southern CA,West,Island/Coastal,A. socialis
+4,CCGP04,-119.572222,34.031389,2010-04-01,Santa Cruz Island; Channel Islands National Park; trail to High Mountain,Channel Islands,Southern CA,West,Island/Coastal,A. socialis
+5,CCGP05,-117.666833,34.230833,2020-11-28,Mt. Baldy,Mount Baldy,Southern CA,West,Mountains,A. socialis
+6,CCGP06,-117.321056,33.965917,2020-12-05,UCR,UCR,Southern CA,East,Southern excluding Mojave Desert,A. socialis
+7,CCGP07,-118.112583,34.492722,2020-12-12,Acton,Angeles NF,Southern CA,West,Mountains,A. socialis
+8,CCGP08,-116.893417,32.726583,2020-12-21,Jamul,Mexico Border,Southern CA,West,Southern excluding Mojave Desert,A. socialis
+9,CCGP09,-117.241833,32.672722,2020-12-21,Cabrillo National Monument,Mexico Border,Southern CA,West,Southern excluding Mojave Desert,A. socialis
+10,CCGP10,-116.814639,32.663167,2020-12-22,Otay Lakes Road,Mexico Border,Southern CA,West,Southern excluding Mojave Desert,A. socialis
+11,CCGP11,-116.618806,32.606083,2020-12-22,Potrero,Mexico Border,Southern CA,West,Southern excluding Mojave Desert,A. socialis
+12,CCGP12,-116.788667,32.621389,2020-12-23,Otay Preserve Sycamore Canyon,Mexico Border,Southern CA,West,Southern excluding Mojave Desert,A. socialis
+13,CCGP13,-116.680944,32.599583,2020-12-24,Barrett Smith Road,Mexico Border,Southern CA,West,Southern excluding Mojave Desert,A. socialis
+14,CCGP14,-116.49075,32.594,2020-12-24,2 miles west of Campo; south of the 94,Mexico Border,Southern CA,West,Southern excluding Mojave Desert,A. socialis
+15,CCGP15,-116.377444,32.649806,2020-12-25,past route 15 on the 94,Mexico Border,Southern CA,West,Southern excluding Mojave Desert,A. socialis
+16,CCGP16,-116.254667,32.703056,2020-12-25,McCain Valley Rd.,Mexico Border,Southern CA,West,Southern excluding Mojave Desert,A. socialis
+17,CCGP17,-116.144778,32.625056,2020-12-26,Old Hwy 80,Mexico Border,Southern CA,West,Southern excluding Mojave Desert,A. socialis
+18,CCGP18,-116.0705,32.704472,2020-12-26,Interstate I-8; 3 miles east of Mountain Spring Rd.,Mexico Border,Southern CA,East,Mojave Desert,A. socialis
+19,CCGP19,-114.50275,34.043861,2020-12-31,Agnes Wilson Road; west of the 95,E Joshua Tree NP,Southern CA,East,Mojave Desert,A. socialis
+20,CCGP20,-114.751139,34.181139,2021-01-01,Turtle Mountain Wilderness,E Joshua Tree NP,Southern CA,East,Mojave Desert,A. socialis
+21,CCGP21,-115.190528,34.072778,2021-01-02,Powerline Road,E Joshua Tree NP,Southern CA,East,Mojave Desert,A. socialis
+22,CCGP22,-115.354333,34.080833,2021-01-02,Joshua Tree National Park,Joshua Tree NP,Southern CA,East,Mojave Desert,A. socialis
+23,CCGP23,-115.569083,34.07625,2021-01-02,Joshua Tree National Park,Joshua Tree NP,Southern CA,East,Mojave Desert,A. socialis
+24,CCGP24,-117.835111,34.290583,2021-01-24,Angeles National Forest,Angeles NF,Southern CA,West,Mountains,A. socialis
+25,CCGP25,-118.079611,34.268944,2021-01-25,Highway 2,Angeles NF,Southern CA,West,Mountains,A. socialis
+26,CCGP26,-117.465389,34.224306,2021-02-15,Lytle Creek Road,Angeles NF,Southern CA,West,Mountains,A. socialis
+27,CCGP27,-117.273639,34.177139,2021-02-21,San Bernardino National Forest; Highway 18,San Bernardino NF,Southern CA,West,Mountains,A. socialis
+28,CCGP28,-117.185667,34.153111,2021-02-21,Highway 330,San Bernardino NF,Southern CA,West,Mountains,A. socialis
+29,CCGP29,-117.060694,34.075667,2021-02-23,Feb 23 2021,San Bernardino NF,Southern CA,West,Mountains,A. socialis
+30,CCGP30,-117.432944,33.746222,2021-02-27,Lake Elsinore,Riverside County,Southern CA,West,Southern excluding Mojave Desert,A. socialis
+31,CCGP31,-118.305556,34.140528,2021-02-28,Griffith Park,Griffith Park,Southern CA,West,Mountains,A. socialis
+32,CCGP32,-118.342306,34.122222,2021-03-06,Muholland Drive,Hollywood Hills,Southern CA,West,Mountains,A. socialis
+33,CCGP33,-118.511611,34.123806,2021-03-06,Mandeville Fire Road,Santa Monica Mts,Southern CA,West,Mountains,A. socialis
+34,CCGP34,-118.583278,34.123694,2021-03-07,Edmund Edelman Park,Santa Monica Mts,Southern CA,West,Mountains,A. socialis
+35,CCGP35,-118.659917,34.103056,2021-03-07,Mulholland Highway,Santa Monica Mts,Southern CA,West,Mountains,A. socialis
+36,CCGP36,-118.719278,34.108389,2021-03-07,Mulholland Highway,Santa Monica Mts,Southern CA,West,Mountains,A. socialis
+37,CCGP37,-117.922417,35.978556,2021-03-30,Cinder Road,W Death Valley,Northern CA,East,Mojave Desert,A. socialis
+38,CCGP38,-118.449389,37.4635,2021-03-30,Tablelands Volcanic,Bishop,Northern CA,East,Mojave Desert,A. socialis
+39,CCGP39,-118.5415,37.406389,2021-03-31,off 359,Bishop,Northern CA,East,Mojave Desert,A. socialis
+40,CCGP40,-119.198917,38.184972,2021-03-31,off 359,N Yosemite,Northern CA,East,Mountains,A. socialis
+41,CCGP41,-120.289389,40.403583,2021-04-01,off 359; North of Honey Lake,S Cedarville,Northern CA,East,Mountains,A. socialis
+42,CCGP42,-120.290694,40.403361,2021-04-01,off 359,S Cedarville,Northern CA,East,Mountains,A. socialis
+43,CCGP43,-120.006778,41.544472,2021-04-02,at Nevada border; south of 299,Cedarville,Northern CA,East,Mountains,A. socialis
+44,CCGP44,-120.050194,41.578556,2021-04-02,county road 18,Cedarville,Northern CA,East,Mountains,A. socialis
+45,CCGP45,-120.094889,41.618167,2021-04-02,county road 18,Cedarville,Northern CA,East,Mountains,A. socialis
+46,CCGP46,-121.997917,41.740889,2021-04-08,Old State Hwy; Klamath National Forest,N Mount Shasta,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+47,CCGP47,-122.065583,41.755944,2021-04-08,off the 97; next to Klamath National Forest,N Mount Shasta,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+48,CCGP48,-121.908944,41.761972,2021-04-09,Klamath Basin,N Mount Shasta,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+49,CCGP49,-121.934194,41.803167,2021-04-09,Klamath Basin; red rock road,N Mount Shasta,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+50,CCGP50,-121.934222,41.803167,2021-04-10,USF5Q002; National Forest,W Lava Beds NM,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+51,CCGP51,-121.783611,41.719083,2021-04-10,Klamath National Forest,W Lava Beds NM,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+52,CCGP52,-121.755083,41.775833,2021-04-11,Willow Creek & Red rock road,W Lava Beds NM,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+53,CCGP53,-121.67175,41.76175,2021-04-11,4 miles south of Mt. Dome,W Lava Beds NM,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+54,CCGP54,-121.640667,41.779944,2021-04-12,Road N2; Nationla Forest,W Lava Beds NM,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+55,CCGP55A,-121.596611,41.788083,2021-04-12,1 mile away from Lava Beds National Monument,Lava Beds NM,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+56,CCGP55B,-121.596667,41.788194,2021-04-12,1 mile away from Lava Beds National Monument,Lava Beds NM,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+57,CCGP56,-122.156611,41.576778,2021-04-13,Deer Mountain Road; Klamath National Forest,N  Mount Shasta,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+58,CCGP57,-122.2385,41.540694,2021-04-13,99-97 cutoff; Klamath National Forest,N  Mount Shasta,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+59,CCGP58,-122.242833,41.52,2021-04-14,Bolam Road; Shasta-Trinity National Forest,Mount Shasta,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+60,CCGP59,-122.276722,41.532472,2021-04-14,off the 97,Mount Shasta,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+61,CCGP60,-122.347639,41.481889,2021-04-14,off the 97; near Mt. Shasta,Mount Shasta,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+62,CCGP61,-122.449972,41.473194,2021-04-15,off the 5; weed airport road,Mount Shasta,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+63,CCGP62,-122.472333,41.515361,2021-04-15,Slough Road,W Mount Shasta,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+64,CCGP63,-122.501389,41.587056,2021-04-15,off the 5; a couple miles north of E. Louie Rd.,W Mount Shasta,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+65,CCGP64,-122.453167,41.633361,2021-04-15,Nelson Road; off 99-97 cutoff,W Mount Shasta,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+66,CCGP65,-122.683889,41.719278,2021-04-16,Greenhorn Road,W Mount Shasta,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+67,CCGP66,-122.581972,41.780556,2021-04-16,off the 5; Near Hornbrook,W Mount Shasta,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+68,CCGP67,-122.582667,41.839528,2021-04-16,off the 96; 2 miles west of the 5,Klamath River,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+69,CCGP68,-122.619861,41.834417,2021-04-17,off the 96; near Klamath River Road,Klamath River,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+70,CCGP69,-122.694722,41.854778,2021-04-17,off the 96; Klamath National Forest near cayuse day use area,Klamath River,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+71,CCGP70,-122.816917,41.873333,2021-04-18,off the 96; Klamath National Forest; Beaver Creek Road,Klamath River,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+72,CCGP71,-123.019472,41.793278,2021-04-18,off the 96; near Hamberg; Klamath National Forest,Klamath River,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+73,CCGP72,-123.511278,41.591667,2021-04-19,off the 96; halfway between Happy Camp and Somes Bar,Klamath River,Northern CA,West,Northern gradient excluding coastal and Cedarville,Rhizocarpon sp
+74,CCGP73,-124.118417,41.035639,2021-04-22,Houda Point Beach & Camel Rock,Trinidad,Northern CA,West,Island/Coastal,A. socialis
+75,CCGP74,-124.1615,41.140833,2021-04-22,Patrick Point State Park; Wedding Rock,Trinidad,Northern CA,West,Island/Coastal,A. socialis
+76,CCGP75,-120.832639,36.370722,2021-05-02,Laguna Mt. Campground; Coalinga Road,E King City,Northern CA,West,Mountains,A. socialis
+77,CCGP76,-120.485694,36.218639,2021-05-02,Coalinga Road,E King City,Northern CA,West,Mountains,A. socialis
+78,CCGP77,-123.810194,39.304528,2021-05-03,Mendocino Headlands State Park,Mendocino,Northern CA,West,Island/Coastal,A. socialis
+79,CCGP78,-123.802833,39.488028,2021-05-04,MacKerricher State Park; near Laguna Point,Mendocino,Northern CA,West,Island/Coastal,A. socialis
+80,CCGP79,-123.813111,39.45125,2021-05-04,Glass Beach,Mendocino,Northern CA,West,Island/Coastal,A. socialis
+81,CCGP80,-123.812611,39.329944,2021-05-05,Russian Gulch State Park,Mendocino,Northern CA,West,Island/Coastal,A. socialis
+82,CCGP81,-122.504056,39.168083,2021-05-08,Indian Valley Reservoir; Bartlett Springs Road,NE Clear Lake,Northern CA,West,Mountains,A. socialis
+83,CCGP82,-122.455917,39.027556,2021-05-09,Walker Ridge Road,E Clear Lake,Northern CA,West,Mountains,A. socialis
+84,CCGP83,-122.351056,38.983722,2021-05-10,off the 16; near Cowboy Camp,E Clear Lake,Northern CA,West,Mountains,A. socialis
+85,CCGP84,-122.343389,38.958444,2021-05-10,off the 16; near Cowboy Camp; 4 miles South of the 20,E Clear Lake,Northern CA,West,Mountains,A. socialis
+86,CCGP85,-122.331556,38.925972,2021-05-10,off the 16; 7 miles south of the 20,E Clear Lake,Northern CA,West,Mountains,A. socialis
+87,CCGP86,-122.301944,38.910194,2021-05-10,off the 16; 10 miles south of the 20,E Clear Lake,Northern CA,West,Mountains,A. socialis
+88,CCGP87,-122.606,38.998083,2021-05-11,off the 53,E Clear Lake,Northern CA,West,Mountains,A. socialis
+89,CCGP88,-122.370361,39.011472,2021-05-12,off the 20; 1 mile west of the 16,Clear Lake,Northern CA,West,Mountains,A. socialis
+90,CCGP89,-122.407639,39.011417,2021-05-12,off the 20; 3 miles west of the 16,E Clear Lake,Northern CA,West,Mountains,A. socialis
+91,CCGP90,-122.761278,39.040111,2021-05-12,off the 20; on clear lake; 2 miles west of Glenhaven,Clear Lake,Northern CA,West,Mountains,A. socialis
+92,CCGP91,-122.490778,39.020194,2021-05-12,off the 20; 8 miles west of the 16,E Clear Lake,Northern CA,West,Mountains,A. socialis
+93,CCGP92,-122.268056,38.908833,2021-05-13,off the 16; Camp Haswell,E Clear Lake,Northern CA,West,Mountains,A. socialis
+94,CCGP93,-122.344333,39.025472,2021-05-13,off the 20; 1.5 miles east of the 16,E Clear Lake,Northern CA,West,Mountains,A. socialis
+95,CCGP94,-122.345,39.061861,2021-05-13,off the 20; 4 miles east of the 16,E Clear Lake,Northern CA,West,Mountains,A. socialis
+96,CCGP95,-122.320806,39.106083,2021-05-13,off the 20; 7 miles east of the 16,E Clear Lake,Northern CA,West,Mountains,A. socialis
+97,CCGP96,-121.833222,39.157,2021-05-14,West Butte Road; 1 mile North of 20,W Yuba City,Northern CA,West,Central Valley ,A. socialis
+98,CCGP97,-121.868611,39.169944,2021-05-14,West Butte Road,W Yuba City,Northern CA,West,Central Valley ,A. socialis
+99,CCGP98,-121.893028,39.195222,2021-05-14,West Butte Road; 6 miles North of 20,W Yuba City,Northern CA,West,Central Valley ,A. socialis
+100,CCGP99,-121.905611,39.216889,2021-05-14,West Butte Road; 8 miles North of 20,W Yuba City,Northern CA,West,Central Valley ,A. socialis
+101,CCGP100,-121.788083,39.186611,2021-05-14,Pass Road; 2 miles west of Mt. Vernon,W Yuba City,Northern CA,West,Central Valley ,A. socialis
+102,CCGP101,-121.715,39.212111,2021-05-14,East Butte Road,Yuba City,Northern CA,West,Central Valley ,A. socialis
+103,CCGP102,-121.433333,39.226361,2021-05-15,off the 20; 1.4 miles west of Sycamore Ranch,Yuba City,Northern CA,West,Central Valley ,A. socialis
+104,CCGP103,-120.691417,39.310583,2021-05-16,off the 20; near Lowell Hill Ridge,Tahoe NF,Northern CA,East,Mountains,A. socialis
+105,CCGP104,-120.818639,39.319667,2021-05-17,off the 20; 8 miles west of the 80; Tahoe National Forest,Tahoe NF,Northern CA,East,Mountains,A. socialis
+106,CCGP105,-117.997,35.375083,2021-05-19,Ricardo Campground; Red Rock Canyon State Park,Red Rock Canyon SP,Southern CA,East,Mojave Desert,A. socialis
+107,CCGP106,-117.992972,35.387694,2021-05-19,Red Rock Canyon State Park,Red Rock Canyon SP,Southern CA,East,Mojave Desert,A. socialis
+108,CCGP107,-117.819083,35.410111,2021-05-19,Red Rock Randsburg Road,Red Rock Canyon SP,Southern CA,East,Mojave Desert,A. socialis
+109,CCGP108,-117.666167,35.377,2021-05-19,Red Rock Randsburg Road,Mojave Desert,Southern CA,East,Mojave Desert,A. socialis
+110,CCGP109,-117.631556,35.347917,2021-05-19,Butte Ave.,Mojave Desert,Southern CA,East,Mojave Desert,A. socialis
+111,CCGP110,-117.592,35.42225,2021-05-19,Trona Road,Mojave Desert,Southern CA,East,Mojave Desert,A. socialis
+112,CCGP111,-117.261861,35.109278,2021-05-20,County Road 20776,Barstow,Southern CA,East,Mojave Desert,A. socialis
+113,CCGP112,-117.157667,35.074083,2021-05-20,near the 96,Barstow,Southern CA,East,Mojave Desert,A. socialis
+114,CCGP113,-117.105278,35.125111,2021-05-20,on the 99,Barstow,Southern CA,East,Mojave Desert,A. socialis
+115,CCGP114,-117.048333,35.102972,2021-05-20,off the 96; county road,Barstow,Southern CA,East,Mojave Desert,A. socialis
+116,CCGP115,-116.971417,35.037528,2021-05-21,Copper City Road,Barstow,Southern CA,East,Mojave Desert,A. socialis
+117,CCGP116,-116.902056,35.011167,2021-05-21,Fort Irwin Road,Barstow,Southern CA,East,Mojave Desert,A. socialis
+118,CCGP117,-116.836278,35.041778,2021-05-21,Madrugador Road,Barstow,Southern CA,East,Mojave Desert,A. socialis
+119,CCGP118,-116.628028,35.058917,2021-05-21,Alvord Mountain Road,Barstow,Southern CA,East,Mojave Desert,A. socialis
+120,CCGP119,-116.558944,35.054167,2021-05-21,Powerline Road; 5 miles north of field road exit on the 15,Barstow,Southern CA,East,Mojave Desert,A. socialis
+121,CCGP120,-116.490083,35.112389,2021-05-21,Powerline Road; 20 miles SE of Baker,Baker,Southern CA,East,Mojave Desert,A. socialis
+122,CCGP121,-116.429254,35.174559,2021-05-22,Powerline Road,Baker,Southern CA,East,Mojave Desert,A. socialis
+123,CCGP122,-116.451222,35.149111,2021-05-22,Powerline Road,Baker,Southern CA,East,Mojave Desert,A. socialis
+124,CCGP123,-116.370333,35.247111,2021-05-22,Powerline Road; 15 miles east of Baker,Baker,Southern CA,East,Mojave Desert,A. socialis
+125,CCGP124,-116.292389,35.270833,2021-05-22,Powerline Road,Baker,Southern CA,East,Mojave Desert,A. socialis
+126,CCGP125,-116.027361,35.416639,2021-05-23,Halloran Springs Road; North of Hollow Hills Wilderness Area,Baker,Southern CA,East,Mojave Desert,A. socialis
+127,CCGP126,-115.992167,35.41125,2021-05-23,Halloran Springs Road; North East of Hollow Hills Wilderness Area,Baker,Southern CA,East,Mojave Desert,A. socialis
+128,CCGP127,-115.933694,35.403528,2021-05-23,Halloran Springs Road,Baker,Southern CA,East,Mojave Desert,A. socialis
+129,CCGP128,-115.895361,35.383889,2021-05-23,Halloran Springs Road; close to the 15,Baker,Southern CA,East,Mojave Desert,A. socialis
+130,CCGP129,-115.835417,35.393611,2021-05-23,off the 15; 17 miles east of Baker,E Baker,Southern CA,East,Mojave Desert,A. socialis
+131,CCGP130,-115.866194,35.774639,2021-05-24,Horsethief Camp,E Death Valley,Southern CA,East,Mojave Desert,A. socialis
+132,CCGP131,-115.735,35.774306,2021-05-24,County road 20918,E Death Valley,Southern CA,East,Mojave Desert,A. socialis
+133,CCGP132,-115.688083,35.719,2021-05-24,Kingston Road,E Baker,Southern CA,East,Mojave Desert,A. socialis
+134,CCGP133,-117.956083,35.624528,2021-05-25,off the 178,Lake Isabella,Southern CA,East,Mountains,A. socialis
+135,CCGP134,-118.043667,35.675778,2021-05-25,off the 178,Lake Isabella,Southern CA,East,Mountains,A. socialis
+136,CCGP135,-118.109444,35.749556,2021-05-25,off the 178,Lake Isabella,Southern CA,East,Mountains,A. socialis
+137,CCGP136,-118.198,35.695944,2021-05-25,off the 178; 1 mile from Onyx,Lake Isabella,Southern CA,East,Mountains,A. socialis
+138,CCGP137,-118.436667,35.658806,2021-05-25,off the 178; South Fork Rec Campground; Sequoia National Forest,Lake Isabella,Southern CA,East,Mountains,A. socialis
+139,CCGP138,-118.616194,35.553611,2021-05-25,off the 178,Lake Isabella,Southern CA,East,Mountains,A. socialis
+140,CCGP139,-118.795306,35.440139,2021-05-26,off the 178; 12 miles east of Bakersfield,Lake Isabella,Southern CA,East,Mountains,A. socialis
+141,CCGP140,-119.603444,35.299139,2021-05-26,Reserve Road,W Bakersfield,Southern CA,West,Central Valley ,A. socialis
+142,CCGP141,-119.822917,35.355167,2021-05-26,off the 58; 10 miles west of McKittrick,W Bakersfield,Southern CA,West,Central Valley ,A. socialis
+143,CCGP142,-120.279361,35.352083,2021-05-27,Pozo Road,San Luis Obispo,Southern CA,West,Island/Coastal,A. socialis
+144,CCGP143,-120.833194,35.357778,2021-05-27,Morro Bay State Park,Morro Bay,Southern CA,West,Island/Coastal,A. socialis
+145,CCGP144,-120.720528,35.334917,2021-05-27,El Chorro Regional Park,Morro Bay,Southern CA,West,Island/Coastal,A. socialis
+146,CCGP145,-120.936417,35.44925,2021-05-28,near Estero Bay; off Highway 1,Morro Bay,Southern CA,West,Island/Coastal,A. socialis
+147,CCGP146,-121.155111,35.622333,2021-05-28,off the 1; 6.3 miles north of Cambria,San Simeon,Southern CA,West,Island/Coastal,A. socialis
+148,CCGP147,-121.274889,35.668972,2021-05-28,near Piedras Blancas State Marine Reserve & Hearst Castle,San Simeon,Southern CA,West,Island/Coastal,A. socialis
+149,CCGP148,-119.063056,34.088444,2021-05-29,near Point Mugu State Park,Point Mugu/Malibu,Southern CA,West,Island/Coastal,A. socialis
+150,CCGP149,-119.060167,34.165444,2021-05-29,Potrero Road; near CSU Channel Islands,Santa Monica Mountains,Southern CA,West,Island/Coastal,A. socialis
+151,CCGP150,-118.808333,34.0015,2021-05-31,Point Dume,Point Dume,Southern CA,West,Island/Coastal,A. socialis
+152,CCGP151,-118.888861,34.0625,2021-05-31,Charmlee Wilderness Park,Malibu,Southern CA,West,Island/Coastal,A. socialis
+153,CCGP152,-118.889139,34.103139,2021-05-31,Little Sycamore Canyon Road,Santa Monica Mountains,Southern CA,West,Mountains,A. socialis
+154,CCGP153,-116.349444,34.032417,2021-06-02,Eureka Peak #1; Joshua Tree National Park,Joshua Tree NP,Southern CA,East,Mojave Desert,A. socialis
+155,CCGP154,-116.303167,34.011222,2021-06-02,Upper Covington Flats #1; Joshua Tree National Park,Joshua Tree NP,Southern CA,East,Mojave Desert,A. socialis
+156,CCGP155,-116.122278,34.003194,2021-06-03,Big Sheep's Pass #3; Joshua Tree National Park,Joshua Tree NP,Southern CA,East,Mojave Desert,A. socialis
+157,CCGP156,-116.084278,33.90175,2021-06-03,Geology Tour Road #6; Joshua Tree National Park,Joshua Tree NP,Southern CA,East,Mojave Desert,A. socialis
+158,CCGP157,-115.932333,33.778722,2021-06-03,Pinkham Canyon #1; Joshua Tree National Park,Joshua Tree NP,Southern CA,East,Mojave Desert,A. socialis
+159,Herb_11672_Y,-118.5883333,34.12158333,1905-07-11,Arizona; near ASU,Arizona,Arizona,Arizona,Arizona,A. socialis
+160,Herb_JA13_W,-116.5036111,33.21130556,2019-01-01,outside Anza Borrego Park,Anza Borrego SP,Southern CA,East,Mojave Desert,A. socialis
+161,Herb_8969_H,-120.0497222,43.00722222,2007-08-21,Santa Rosa Island,Santa Rosa Island,Southern CA,West,Channel Islands,A. socialis
+162,Herb_11671_Z,-112.0824178,33.4350625,1905-07-11,Arizona; near ASU,Arizona,Arizona,Arizona,Arizona,A. socialis
+163,Herb_JA3_P,-118.5883333,34.12158333,2018-12-27,Ed Edelman Park: Topanga Canyon,Ed Edelman Park,Southern CA,West,Mountains,A. socialis
+164,Herb_19128_X,-108.6653481,34.1379501,1900-01-01,New Mexico,New Mexico,New Mexico,New Mexico,New Mexico,A. socialis
+165,Herb_11983_F,-119.5722222,34.03138889,2010-04-01,Santa Cruz Island; Channel Islands National Park,Channel Islands,Southern CA,West,Channel Islands,A. socialis
+166,Herb_7489.2_G,-120.0280556,33.98583333,2006-10-15,Santa Rosa Island; Channel Islands National Park,Channel Islands,Southern CA,West,Channel Islands,A. socialis
+167,Herb_3423_E,-117.2405556,33.62666667,2005-07-31,Menifee Hills: Wildomar: Hidden Valley,Wildomar,Southern CA,West,Mountains,A. socialis
+168,Herb_JA6_Q,-117.2923056,33.98152778,2018-12-30,Box Springs Mountain Reserve,Box Springs,Southern CA,East,Mojave Desert,A. socialis
+169,Herb_JA12_V,-116.8557778,33.44011111,2019-01-01,off road to Warner Springs,Warner Springs,Southern CA,West,Mountains,A. socialis
+170,Herb_JA7_R,-117.2926667,33.97852778,2018-12-30,Box Springs Mountain Reserve,Box Springs,Southern CA,East,Mojave Desert,A. socialis
+171,Herb_4825_J,-116.4511111,33.10722222,2005-12-23,Anza Borrego State Park,Anza Borrego SP,Southern CA,East,Colorado Desert,A. socialis
+172,Herb_JA8_S,-117.29275,33.97902778,2018-12-30,Box Springs Mountain Reserve,Box Springs,Southern CA,East,Mojave Desert,A. socialis
+173,Herb_16129_I,-119.0362778,33.46619444,2013-09-28,Santa Barbara Island,Channel Islands,Southern CA,West,Channel Islands,A. socialis
+174,Herb_1557_C,-118.5858333,34.12194444,2004-08-15,Ed Edelman Park: Topanga Canyon,Santa Monica Mountains,Southern CA,West,Mountains,A. socialis
+175,Herb_8503_N,-122.0389444,40.10577778,2017-01-28,"Dry Creek Preserve, The Nature Conservancy Tehama County",Tehama County,Northern CA,Central ,Northern California,A. socialis
+176,Herb_JA11_U,-116.7217222,33.59241667,2018-12-31,South of Mount San Jacinto,Mount San Jacinto,Southern CA,East,Mountains,A. socialis
+177,Herb_2674_A,-117.2391667,32.67472222,2005-04-06,South Coast; Cabrollo National Monument,Cabrillo NM,Southern CA,West,Island/Coastal,A. socialis
+178,Herb_13801_D,-117.5718056,33.76425,2011-10-21,Peninsular Range: Santa Ana Mountains: Bedford Peak: top of ridge off Main Divide Road,Santa Ana Mountains,Southern CA,West,Mountains,A. socialis
+179,Herb_21410_K,-115.6319389,37.7579205,2018-01-01,"Lincoln County, Nevada, Docs Pass ",Nevada,Nevada,Nevada,Nevada,A. socialis
+180,Herb_JA2_O,-118.5850556,34.12275,2018-12-27,Ed Edelman Park: Topanga Canyon,Ed Edelman Park,Southern CA,West,Mountains,A. socialis
+181,Herb_22459_M,,,2016-05-02,Juyo County CA E Sierras,Eastern Sierras,Central CA,East,Mountains,A. socialis
+182,Herb_JA10_T,-116.7213889,33.59261111,2018-12-31,South of Mount San Jacinto,Mount San Jacinto,Southern CA,East,Mountains,A. socialis
+183,Herb_4269.2_B,-119.7677778,32.46222222,2005-10-27,"Central Coast: Santa Barbara, E of San Antonio Creek at the end of Via Chaparral",Santa Barbara,Southern CA,West,Island/Coastal,A. socialis
+184,Herb_21131_L,-115.6319389,37.7579205,2018-05-25,"Lincoln County, Nevada",Nevada,Nevada,Nevada,Nevada,A. socialis
+185,refJNA_AS_CCGP158,-115.932556,33.778278,2020-10-25,Joshua Tree National Park,Joshua Tree NP,Southern CA,East,Mojave Desert,A. socialis
+186,BigSheepPass,-116.122278,34.003194,2020-01-01,Joshua Tree National Park,Joshua Tree NP,Southern CA,East,Mojave Desert,A. socialis
+187,PinkhamCyn,-115.932333,33.778722,2020-01-01,Joshua Tree National Park,Joshua Tree NP,Southern CA,East,Mojave Desert,A. socialis

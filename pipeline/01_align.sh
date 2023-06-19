@@ -1,6 +1,6 @@
 #!/usr/bin/bash -l
-#SBATCH -N 1 -n 16 --mem 32gb --out logs/bwa.%a.log --time 8:00:00 -a 1-159
-module load bwa
+#SBATCH -N 1 -c 16 -n 1 --mem 32gb --out logs/bwa.%a.log --time 2:00:00 -a 1-187 -p short
+module load bwa-mem2
 module load samtools
 module load picard
 module load gatk/4
@@ -56,7 +56,6 @@ do
       BASE=$(basename $BASEPATTERN | perl -p -e 's/(\S+)\[12\].+/$1/g; s/_R?$//g;')
       # END THIS PART IS PROBABLY PROJECT SPECIFIC
       echo "STRAIN is $STRAIN BASE is $BASE BASEPATTERN is $BASEPATTERN"
-
       TMPBAMFILE=$TEMP/$BASE.unsrt.bam
       SRTED=$TEMP/$BASE.srt.bam
       DDFILE=$TEMP/$BASE.DD.bam
@@ -70,7 +69,7 @@ do
           if [ -e $PAIR1 ]; then
             if [ ! -f $SRTED ]; then
               # potential switch this to bwa-mem2 for extra speed
-              bwa mem -t $CPU -R $READGROUP $REFGENOME $FASTQFOLDER/$BASEPATTERN | samtools sort --threads $CPU -O bam -o $SRTED -T $TEMP -
+              bwa-mem2 mem -t $CPU -R $READGROUP $REFGENOME $FASTQFOLDER/$BASEPATTERN | samtools sort --threads $CPU -O bam -o $SRTED -T $TEMP -
             fi
           else
             echo "Cannot find $BASEPATTERN, skipping $STRAIN"

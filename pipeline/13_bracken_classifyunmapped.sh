@@ -1,5 +1,5 @@
 #!/usr/bin/bash -l
-#SBATCH -p short -N 1 -n 8 --mem 64gb --out logs/bracken_unmapped.%a.log -a 1-159
+#SBATCH -p short -N 1 -n 8 --mem 256gb --out logs/bracken_unmapped.%a.log -a 1-187
 
 module load workspace/scratch
 module load bracken
@@ -27,7 +27,7 @@ if [ $N -gt $MAX ]; then
   echo "$N is too big, only $MAX lines in $SAMPFILE"
   exit
 fi
-DB=pluspf
+DB=pluspfp
 INDIR=unmapped
 IFS=,
 OUTDIR=results/bracken_unmapped

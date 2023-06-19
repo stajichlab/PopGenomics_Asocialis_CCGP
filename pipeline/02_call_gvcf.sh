@@ -3,7 +3,7 @@
 #SBATCH -a 1-159
 
 module load picard
-module load gatk/4
+module load gatk/4.4.0.0
 module load bcftools
 
 MEM=32g
@@ -23,6 +23,7 @@ CPU=1
 if [ $SLURM_CPUS_ON_NODE ]; then
  CPU=$SLURM_CPUS_ON_NODE
 fi
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 N=${SLURM_ARRAY_TASK_ID}
 
 if [ ! $N ]; then

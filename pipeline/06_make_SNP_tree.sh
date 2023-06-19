@@ -70,7 +70,9 @@ do
     vcf=$root.vcf.gz
     if [[ ! -f $FAS || ${vcf} -nt $FAS ]]; then
       vcftemp=$SCRATCH/$PREFIX.$POPNAME.$TYPE.vcf.gz
-      bcftools filter -Oz -o $vcftemp --SnpGap 3 -e 'QUAL < 1000 || AF=1 || INFO/AF < 0.05 || F_MISSING > 0' $vcf
+
+      #bcftools filter -Oz -o $vcftemp --SnpGap 3 -e 'QUAL < 1000 || AF=1 || INFO/AF < 0.05 || F_MISSING > 0' $vcf
+      bcftools filter -Oz -o $vcftemp --SnpGap 3 -e 'QUAL < 1000 || AF=1 || INFO/AF < 0.01' $vcf
       bcftools index $vcftemp
       # no ref genome alleles
       printf ">%s\n%s\n" $REFNAME $(bcftools query -f '%REF' $vcftemp) > $FAS
@@ -79,5 +81,5 @@ do
     fi
   done
 done
-#parallel -j 2 fasttreerun ::: $(ls $TREEDIR/*.mfa)
+parallel -j 2 fasttreerun ::: $(ls $TREEDIR/*.mfa)
 #parallel -j 4 iqtreerun ::: $(ls $TREEDIR/*.mfa)
