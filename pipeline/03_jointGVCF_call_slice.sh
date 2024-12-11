@@ -113,7 +113,7 @@ do
 		--cluster-window-size 10  \
 		--filter-expression "QD < 2.0" --filter-name QualByDepth \
 		--filter-expression "MQ < 40.0" --filter-name MapQual \
-		--filter-expression "QUAL < 100" --filter-name QScore \
+		--filter-expression "QUAL < 30" --filter-name QScore \
 		--filter-expression "SOR > 4.0" --filter-name StrandOddsRatio \
 		--filter-expression "FS > 60.0" --filter-name FisherStrandBias \
 		--missing-values-evaluate-as-failing --create-output-variant-index false
